@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    height: 40px;
+}
+
+img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container button{
+    padding: 5px 10px 5px;
+    cursor: pointer;
+}
+
+main {
+    background-color: #7FFFD4;
+    width: 100%;
+    height: 80vh;
+    margin-top: 40px;
+}
+
+#grid{
+    width: 50%;
+    height: 100%;
+    padding: 30px 0px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#difficult {
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(212, 212, 37);
+    border: 1px solid rgb(212, 212, 37);
+}
+
+.square{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square.clicked{
+    background-color: cyan;
+}
+
+
+.text{
+    margin: 30px 0px 0px 10px;
+}
