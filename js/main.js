@@ -18,7 +18,7 @@ function startGame() {
         case 3:
             cellTotal = 49;
             break;
-    }
+    };
 
     cellPerSide = Math.sqrt(cellTotal);
 
@@ -34,10 +34,10 @@ function startGame() {
             this.classList.toggle('clicked');
             console.log(currentElement.textContent);
         }
-    );
+    )
     gridDom.append(currentElement);
-    }
-}
+    };
+};
     function createGridSquare(number, cellePerLato) {
         const currentElement = document.createElement('div');
         currentElement.style.height = `calc(100% / ${cellePerLato})`;
@@ -49,5 +49,21 @@ function startGame() {
         currentElement.append(numberSquare);
 
         return currentElement;
-    }
+    };
+
+    let randomNumbers = [];
+    
+    while( randomNumbers.length < 16 ){
+
+        let random = Math.floor(Math.random() * (cellTotal)) + 1;
+
+        if( !randomNumbers.includes(random)){
+            randomNumbers.push(random);
+        };
+    };
+
+    console.log(randomNumbers);
+
+    function
+    
 }
