@@ -71,7 +71,11 @@ button {
     justify-content: center;
 }
 
-.square.clicked{
+.clicked-bomb{
+    background-color: red;
+}
+
+.clean {
     background-color: cyan;
 }
 
